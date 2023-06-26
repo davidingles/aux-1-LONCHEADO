@@ -6,31 +6,104 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/4D SUBKIT PROINDECSA.gltf");
+  const { nodes, materials } = useGLTF("/3D LONCHEMUR.gltf");
   return (
     <group {...props} dispose={null}>
-      <group rotation={[-Math.PI, 0, -Math.PI]}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom002"].geometry}
-          material={materials["TQ_ARD_front.002"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom002_1"].geometry}
-          material={materials["TQ_ARD_back.002"]}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes["TQ_ARD-geom002_2"].geometry}
-          material={materials["TQ_ARD_edge.002"]}
-        />
-      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plano002.geometry}
+        material={materials["Material.002"]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plano003.geometry}
+        material={materials["Material.002"]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plano004.geometry}
+        material={materials["Material.002"]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Texto.geometry}
+        material={materials["Material.002"]}
+        position={[0.125, -0.169, -0.063]}
+        rotation={[Math.PI / 2, 0, Math.PI / 2]}
+        scale={0.4}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Texto001.geometry}
+        material={materials["Material.002"]}
+        position={[0.301, -0.169, -0.43]}
+        rotation={[Math.PI / 2, 0, Math.PI / 2]}
+        scale={0.4}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Texto002.geometry}
+        material={materials["Material.002"]}
+        position={[0.165, -0.02, 0.231]}
+        rotation={[Math.PI / 2, 0, Math.PI / 2]}
+        scale={0.4}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Sphere.geometry}
+        material={materials["Material.001"]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Sphere002.geometry}
+        material={materials["Material.001"]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["TQ_ARD-geom"].geometry}
+        material={materials.TQ_ARD_front}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["TQ_ARD-geom_1"].geometry}
+        material={materials.TQ_ARD_back}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["TQ_ARD-geom_2"].geometry}
+        material={materials.TQ_ARD_edge}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["TQ_ARD-geom002"].geometry}
+        material={materials.TQ_ARD_front}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["TQ_ARD-geom002_1"].geometry}
+        material={materials.TQ_ARD_back}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes["TQ_ARD-geom002_2"].geometry}
+        material={materials.TQ_ARD_edge}
+      />
     </group>
   );
 }
 
-useGLTF.preload("/4D SUBKIT PROINDECSA.gltf");
+useGLTF.preload("/3D LONCHEMUR.gltf");
