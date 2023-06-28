@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/3D LONCHEMUR.gltf");
+  const { nodes, materials } = useGLTF("/4D LONCHEMUR.gltf");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -83,4 +83,4 @@ export function Dav(props) {
   );
 }
 
-useGLTF.preload("/3D LONCHEMUR.gltf");
+useGLTF.preload("/4D LONCHEMUR.gltf");
