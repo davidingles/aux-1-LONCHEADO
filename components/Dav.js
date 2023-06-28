@@ -32,7 +32,7 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Texto.geometry}
         material={materials["Material.002"]}
-        position={[0.125, -0.169, -0.063]}
+        position={[-0.185, -0.169, -0.019]}
         rotation={[Math.PI / 2, 0, Math.PI / 2]}
         scale={0.4}
       />
@@ -41,7 +41,7 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Texto001.geometry}
         material={materials["Material.002"]}
-        position={[0.301, -0.169, -0.43]}
+        position={[-0.009, -0.169, -0.386]}
         rotation={[Math.PI / 2, 0, Math.PI / 2]}
         scale={0.4}
       />
@@ -50,7 +50,7 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Texto002.geometry}
         material={materials["Material.002"]}
-        position={[0.165, -0.02, 0.231]}
+        position={[-0.146, -0.02, 0.275]}
         rotation={[Math.PI / 2, 0, Math.PI / 2]}
         scale={0.4}
       />
@@ -59,12 +59,7 @@ export function Dav(props) {
         receiveShadow
         geometry={nodes.Sphere.geometry}
         material={materials["Material.001"]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Sphere002.geometry}
-        material={materials["Material.001"]}
+        position={[-0.311, 0, 0.044]}
       />
       <mesh
         castShadow
@@ -82,24 +77,6 @@ export function Dav(props) {
         castShadow
         receiveShadow
         geometry={nodes["TQ_ARD-geom_2"].geometry}
-        material={materials.TQ_ARD_edge}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes["TQ_ARD-geom002"].geometry}
-        material={materials.TQ_ARD_front}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes["TQ_ARD-geom002_1"].geometry}
-        material={materials.TQ_ARD_back}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes["TQ_ARD-geom002_2"].geometry}
         material={materials.TQ_ARD_edge}
       />
     </group>
